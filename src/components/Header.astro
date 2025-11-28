@@ -1,0 +1,14 @@
+---
+import Navigation from './Navigation.astro';
+import Menu from './Menu.astro';
+import '../styles/global.css';
+const { pageTitle } = Astro.props;
+---
+
+<header>
+    <nav>
+        <Menu/>
+        <Navigation/>
+    </nav>
+    <h1>{pageTitle}</h1>
+</header>
